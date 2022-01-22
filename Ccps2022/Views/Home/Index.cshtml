@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form class="row g-3">
+    <div class="col-md-6">
+    <label for="inputFirstName" class="form-label">Nom</label>
+    <input type="text" class="form-control" id="inputFirstName">
+  </div>
+  <div class="col-md-6">
+      <label for="inputLastname" class="form-label">Prénom</label>
+      <input type="text" class="form-control" id="inputLastName" />
+  </div>
+  <div class="col-md-6">
+    <label for="inputEmail" class="form-label">Adresse Email</label>
+    <input type="email" class="form-control" id="inputEmail">
+  </div>
+  <div class="col-md-6">
+    <label for="DDN" class="form-label"> Date de Naissance </label>
+    <input type="date" class="form-control" id="DDN">
+  </div>
+  <div class="col-12">
+    <label for="inputAddress" class="form-label">Adresse</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="Haiti - delmas 56 -impasse ...">
+  </div>
+  <div class="col-md-6">
+    <label for="inputVille" class="form-label">Ville</label>
+    <input type="text" class="form-control" id="inputVille">
+  </div>
+  <div class="col-md-4">
+    <label for="inputState" class="form-label">Departement</label>
+    <select id="inputState" class="form-select">
+      <option selected>Choose...</option>
+      <option>Artibonite</option>
+      <option>Centre</option><option>Grande-Anse</option><option>Nippes</option><option>Nord</option><option>Nord-Est</option><option>Nord-Ouest</option><option>Ouest</option><option>Sud</option><option>Sud-Est</option>
+    </select>
+  </div>
+  <div class="col-md-2">
+    <label for="inputZip" class="form-label">Code Postale</label>
+    <input type="text" class="form-control" id="inputZip">
+  </div>
+  
+  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+    <button type="submit" class="btn btn-primary text-right">Inscrire Etudiant</button>
+  </div>
+</form>
