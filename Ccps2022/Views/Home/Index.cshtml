@@ -3,42 +3,53 @@
 }
 
 <form class="row g-3">
+  <div class="col-md-6">
+      <label for="inputLastname" class="form-label">Prénom</label>
+      <input type="text" class="form-control" id="inputLastName" />
+  </div>
     <div class="col-md-6">
     <label for="inputFirstName" class="form-label">Nom</label>
     <input type="text" class="form-control" id="inputFirstName">
   </div>
   <div class="col-md-6">
-      <label for="inputLastname" class="form-label">Prénom</label>
-      <input type="text" class="form-control" id="inputLastName" />
+      <label for="inputPhone" class="form-label">Numéro de Téléphone</label>
+      <input type="text" class="form-control" id="inputPhone" />
+  </div>
+  <div class="col-md-6">
+      <label for="inputDdn" class="form-label">Date de Naissance</label>
+      <input type="date" class="form-control" id="inputDdn" />
+  </div>
+  <div class="col-md-6">
+      <label for="inputAdresse" class="form-label">Adresse</label>
+      <input type="text" class="form-control" id="inputAdresse" />
+  </div>
+  <div class="col-md-6">
+      <label for="inputPays" class="form-label">Pays</label>
+      <input type="text" class="form-control" id="inputPays" />
   </div>
   <div class="col-md-6">
     <label for="inputEmail" class="form-label">Adresse Email</label>
     <input type="email" class="form-control" id="inputEmail">
   </div>
-  <div class="col-md-6">
-    <label for="DDN" class="form-label"> Date de Naissance </label>
-    <input type="date" class="form-control" id="DDN">
-  </div>
-  <div class="col-12">
-    <label for="inputAddress" class="form-label">Adresse</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="Haiti - delmas 56 -impasse ...">
-  </div>
-  <div class="col-md-6">
-    <label for="inputVille" class="form-label">Ville</label>
-    <input type="text" class="form-control" id="inputVille">
-  </div>
   <div class="col-md-4">
-    <label for="inputState" class="form-label">Departement</label>
+    <label for="inputState" class="form-label">Sexe</label>
     <select id="inputState" class="form-select">
-      <option selected>Choose...</option>
-      <option>Artibonite</option>
-      <option>Centre</option><option>Grande-Anse</option><option>Nippes</option><option>Nord</option><option>Nord-Est</option><option>Nord-Ouest</option><option>Ouest</option><option>Sud</option><option>Sud-Est</option>
+      <option selected>Choisir...</option>
+      <option>Masculin</option>
+      <option>Féminin</option>
+      <option>Autre</option>
     </select>
   </div>
-  <div class="col-md-2">
-    <label for="inputZip" class="form-label">Code Postale</label>
-    <input type="text" class="form-control" id="inputZip">
-  </div>
+  <div class="btn-group col-md" role="group" aria-label="Basic checkbox toggle button group">
+  <input type="checkbox" class="btn-check" id="etudiant" autocomplete="off">
+  <label class="btn btn-outline-primary" for="etudiant">Etudiant</label>
+
+  <input type="checkbox" class="btn-check" id="professeur" autocomplete="off">
+  <label class="btn btn-outline-primary" for="professeur">Professeur</label>
+
+  <input type="checkbox" class="btn-check" id="adminStaff" autocomplete="off">
+  <label class="btn btn-outline-primary" for="adminStaff">Staff Admin</label>
+</div>
   
   <div class="d-grid gap-2 d-md-flex justify-content-md-end">
     <button type="submit" class="btn btn-primary text-right">Inscrire Etudiant</button>
