@@ -1,4 +1,4 @@
-namespace Ccps2022.Models
+﻿namespace Ccps2022.Models
 {
     public class ErrorViewModel
     {

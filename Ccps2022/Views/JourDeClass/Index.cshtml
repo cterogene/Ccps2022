@@ -1,0 +1,35 @@
+﻿@model IEnumerable<Ccps2022.Models.JoursDeClass>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.JourDescription)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.JourDescription)
+            </td>
+            <td>
+                <a asp-action="Update" asp-route-id="@item.JourId">Update</a> |
+                <a asp-action="Details" asp-route-id="@item.JourId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.JourId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

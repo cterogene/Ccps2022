@@ -1,0 +1,155 @@
+﻿@model IEnumerable<Ccps2022.Models.Personne>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Prenom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Telephone1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Telephone2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ddn)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AdresseRue)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AdresseExtra)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ville)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Pays)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateCreee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Remarque)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Etudiant)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Professeur)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AdminStaff)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Photo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UserNameAttribue)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreeParUsername)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumeroRecu)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EtudiantIdPlus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sexe)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Prenom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telephone1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telephone2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ddn)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AdresseRue)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AdresseExtra)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ville)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Pays)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateCreee)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Remarque)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Etudiant)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Professeur)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AdminStaff)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Photo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserNameAttribue)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreeParUsername)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumeroRecu)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EtudiantIdPlus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sexe)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.PersonneId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.PersonneId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.PersonneId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
